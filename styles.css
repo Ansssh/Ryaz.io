@@ -306,6 +306,15 @@ header nav div a {
     gap: 18%;
 }
 
+
+@media only screen and (max-width: 400px) {
+    .scroll-bar{
+        /* flex-direction: row; */
+        gap: 0px;
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #one, #two{
         flex-flow: column;
@@ -316,10 +325,21 @@ header nav div a {
     }
 }
 
+@media only screen and (min-width: 1200px) {
+    #one, #two{
+        gap: 12%;
+    }
+    .scroll-bar{
+        flex-flow: row nowrap;
+    }
+}
 
 @media only screen and (min-width: 1370px) {
     .scroll-bar{
         flex-flow: row nowrap;
+    }
+    #one, #two{
+        gap:16%;
     }
 }
 
