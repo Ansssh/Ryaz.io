@@ -141,7 +141,7 @@ header nav div a {
     header nav img {
         display: flex;
     }
-    
+
     header nav ul,
     header nav div {
         display: none;
@@ -309,7 +309,7 @@ header nav div a {
 
 
 @media only screen and (max-width: 400px) {
-    .scroll-bar{
+    .scroll-bar {
         /* flex-direction: row; */
         gap: 0px;
         padding: 0;
@@ -317,36 +317,44 @@ header nav div a {
 }
 
 @media only screen and (max-width: 600px) {
-    #one, #two{
+
+    #one,
+    #two {
         flex-flow: column;
     }
-    .scroll-bar{
+
+    .scroll-bar {
         flex-direction: row;
         gap: 0;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    #one, #two{
+
+    #one,
+    #two {
         gap: 12%;
     }
-    .scroll-bar{
+
+    .scroll-bar {
         flex-flow: row nowrap;
     }
 }
 
 @media only screen and (min-width: 1370px) {
-    .scroll-bar{
+    .scroll-bar {
         flex-flow: row nowrap;
     }
-    #one, #two{
-        gap:16%;
+
+    #one,
+    #two {
+        gap: 16%;
     }
 }
 
 /* Service Section Below */
 
-.service-bar{
+.service-bar {
     padding: 0 100px 0 100px;
     display: flex;
     align-items: center;
@@ -354,7 +362,7 @@ header nav div a {
     margin: 0 0 80px 0;
 }
 
-.service-bar h2{
+.service-bar h2 {
     background-color: #B9FF66;
     border: 7px;
     padding: 0 7px 0 7px;
@@ -363,14 +371,14 @@ header nav div a {
     line-height: 51px;
 }
 
-.service-bar article{
+.service-bar article {
     font-size: 18px;
     font-weight: 400;
 }
 
 /* Sevice Boxes */
 
-.service{
+.service {
     display: flex;
     /* border: 1px solid black; */
     padding: 0 100px 0 100px;
@@ -380,7 +388,7 @@ header nav div a {
     margin-bottom: 100px;
 }
 
-.S-box{
+.S-box {
     display: flex;
     flex-basis: 48%;
     border: 1px solid black;
@@ -391,82 +399,137 @@ header nav div a {
 }
 
 
-.learn-more{
+.learn-more {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.S-box-i{
+.S-box-i {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#l1 div h3 mark, #l4 div h3 mark, #l6 div h3 mark{
+#l1 div h3 mark,
+#l4 div h3 mark,
+#l6 div h3 mark {
     font-weight: 500;
     font-size: 30px;
     border-radius: 7px;
     padding: 0 7px 0 7px;
     background-color: #B9FF66;
-} 
+}
 
-.learn-more a{
+.learn-more a {
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     color: #191A23;
 }
 
-#l3 a,#l6 a{
+#l3 a,
+#l6 a {
     color: white;
 }
 
-#l2 div h3 mark, #l3 div h3 mark, #l5 div h3 mark{
+#l2 div h3 mark,
+#l3 div h3 mark,
+#l5 div h3 mark {
     font-weight: 500;
     font-size: 30px;
     border-radius: 7px;
     padding: 0 7px 0 7px;
     background-color: #FFFFFF;
-} 
+}
 
-#l1, #l4{
+#l1,
+#l4 {
     background-color: #F3F3F3;
 }
 
-#l2, #l5{
+#l2,
+#l5 {
     background-color: #B9FF66;
 }
 
-#l3, #l6{
+#l3,
+#l6 {
     background-color: #191A23;
 }
 
-#none{
+#none {
     display: none;
 }
 
 @media only screen and (max-width: 600px) {
-    
-    
-}
-@media only screen and (min-width: 600px) {
+
+    .service-bar {
+        padding: 0 10px 0 10px;
+        flex-direction: column;
+    }
+    .service {
+        padding: 0 10px 0 10px;
+    }
+    .service a{
+        display: none;
+    }
+
     .S-box{
         flex-basis: 100%;
     }
 
 }
 
+@media only screen and (min-width: 600px) {
+    .S-box {
+        flex-basis: 100%;
+    }
+
+    .service-bar {
+        padding: 0 30px 0 30px;
+        flex-direction: column;
+    }
+
+    .service{
+        padding: 0px 30px 0 30px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .service-bar {
+        padding: 0 50px 0 50px;
+    }
+    .service{
+        padding: 0px 50px 0 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .service-bar {
+        padding: 0 100px 0 100px;
+    }
+    .service{
+        padding: 0px 100px 0 100px;
+    }
+}
+
 @media only screen and (min-width: 1240px) {
-    .S-box{
+    .service-bar {
+        padding: 0 100px 0 100px;
+        flex-direction: row;
+    }
+    .S-box {
         flex-basis: 47%;
+    }
+    .service{
+        padding: 0px 100px 0 100px;
     }
 }
 
 @media only screen and (min-width: 1300px) {
-    .S-box{
+    .S-box {
         flex-basis: 48%;
     }
 }
-
-
