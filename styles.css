@@ -793,6 +793,9 @@ header nav div a {
     align-items: center;
     justify-content: space-between;
     background-color: #F3F3F3;
+    box-shadow: #191A23 0 5px;
+
+
     @media only screen and (max-width: 600px) {
         padding: 10px 15px 12px 15px;
         margin: 0 10px 15px 10px;
@@ -801,6 +804,7 @@ header nav div a {
     @media only screen and (min-width: 600px) {
         margin: 0 30px 25px 30px;
         padding: 12px 22px 12px 22px;
+        border: 50%;
     
     }
     @media only screen and (min-width: 768px) {
@@ -811,6 +815,7 @@ header nav div a {
     @media only screen and (min-width: 992px) {
         margin: 0 100px 20px 100px;
         padding: 41px 60px 41px 60px;
+        border: 50%;
 
     
     }
@@ -836,3 +841,38 @@ header nav div a {
     font-weight: 400;
 }
 
+.chigga{
+    margin-top: 130px;
+    @media only screen and (max-width: 600px) {
+        margin-top: 60px;
+        
+    }
+    @media only screen and (min-width: 600px) {
+        margin-top: 60px;
+    
+    }
+    @media only screen and (min-width: 768px) {
+        margin-top: 90px;
+    
+    }
+    @media only screen and (min-width: 992px) {
+        margin-top: 130px;
+    
+    }
+    @media only screen and (min-width: 1200px) {
+        
+    }
+}
+
+.cheat{
+    display: flex;
+    margin: 0 100px 70px 100px;
+    flex-wrap: wrap;
+    gap: 27px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cheat img{
+    flex-basis: 32%
+}
