@@ -468,14 +468,16 @@ header nav div a {
         padding: 0 10px 0 10px;
         flex-direction: column;
     }
+
     .service {
         padding: 0 10px 0 10px;
     }
-    .service a{
+
+    .service a {
         display: none;
     }
 
-    .S-box{
+    .S-box {
         flex-basis: 100%;
     }
 
@@ -491,7 +493,7 @@ header nav div a {
         flex-direction: column;
     }
 
-    .service{
+    .service {
         padding: 0px 30px 0 30px;
     }
 
@@ -501,7 +503,8 @@ header nav div a {
     .service-bar {
         padding: 0 50px 0 50px;
     }
-    .service{
+
+    .service {
         padding: 0px 50px 0 50px;
     }
 }
@@ -510,7 +513,8 @@ header nav div a {
     .service-bar {
         padding: 0 100px 0 100px;
     }
-    .service{
+
+    .service {
         padding: 0px 100px 0 100px;
     }
 }
@@ -520,10 +524,12 @@ header nav div a {
         padding: 0 100px 0 100px;
         flex-direction: row;
     }
+
     .S-box {
         flex-basis: 47%;
     }
-    .service{
+
+    .service {
         padding: 0px 100px 0 100px;
     }
 }
@@ -532,4 +538,166 @@ header nav div a {
     .S-box {
         flex-basis: 48%;
     }
+}
+
+
+/* Proposal Card */
+
+.proposal {
+    display: flex;
+    margin: 0 100px 70px 100px;
+    background-color: #F3F3F3;
+    padding: 0 12% 0 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 45px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 33%;
+}
+
+.text h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text button {
+    height: 68px;
+    width: fit-content;
+    padding: 20px 35px 20px 35px;
+    border-radius: 14px;
+    border: none;
+    background-color: #191A23;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .proposal img {
+        display: none;
+    }
+
+    .proposal {
+        margin: 0 10px 70px 10px;
+    }
+
+    .text {
+        padding: 12% 0 12% 0;
+        width: 100%;
+        gap: 22px;
+    }
+
+    .text button {
+        width: 100%;
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .proposal img {
+        display: none;
+    }
+
+    .text {
+        padding: 12% 0 12% 0;
+        width: 100%;
+        gap: 22px;
+    }
+
+    .proposal {
+        margin: 0 30px 70px 30px;
+    }
+
+    .text button {
+        width: 100%;
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .proposal {
+        margin: 0 50px 70px 50px;
+
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .proposal img {
+        display: flex;
+    }
+
+    .proposal {
+        margin: 0 100px 70px 100px;
+    }
+
+    .text button {
+        width: fit-content;
+    }
+
+    .text {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .proposal img {
+        display: flex;
+    }
+}
+
+
+/* Case Study */
+
+.case-study {
+    margin: 70px 100px 80px 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media only screen and (max-width: 600px) {
+        margin: 0 10px 40px 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 600px) {
+        margin: 0 30px 40px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin: 70px 50px 60px 50px;
+
+    }
+
+    @media only screen and (min-width: 992px) {
+        margin: 70px 100px 80px 100px;
+        flex-direction: row;
+
+    }
+
+    @media only screen and (min-width: 1200px) {}
+}
+
+.case-study h2 {
+    padding: 0px 7px 0px 7px;
+    opacity: 0px;
+    background-color:#B9FF66;
+    font-size: 40px;
+    font-weight: 500;
+}
+.case-study p{
+    flex-basis: 60%;
+    font-size: 18px;
+    font-weight: 400;
 }
