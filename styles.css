@@ -683,6 +683,8 @@ header nav div a {
     @media only screen and (min-width: 992px) {
         margin: 70px 100px 80px 100px;
         flex-direction: row;
+        text-align: left;
+        flex-basis: 30%;
 
     }
 
@@ -692,12 +694,145 @@ header nav div a {
 .case-study h2 {
     padding: 0px 7px 0px 7px;
     opacity: 0px;
-    background-color:#B9FF66;
+    background-color: #B9FF66;
     font-size: 40px;
     font-weight: 500;
 }
-.case-study p{
+
+.case-study p {
     flex-basis: 60%;
     font-size: 18px;
     font-weight: 400;
 }
+
+/* Studying Cases */
+
+.study {
+    display: flex;
+    margin: 0 100px 70px 100px;
+    padding: 70px 60px 70px 60px;
+    background-color: #191A23;
+    color: white;
+    border-radius: 45px;
+
+    @media only screen and (max-width: 600px) {
+        margin: 0 10px 15px 10px;
+        padding: 20px 15px 20px 15px;
+
+    }
+
+    @media only screen and (min-width: 600px) {
+        margin: 0 30px 25px 30px;
+        padding: 25px 20px 25px 20px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        margin: 0 50px 35px 50px;
+        padding: 35px 30px 35px 30px;
+
+    }
+
+    @media only screen and (min-width: 992px) {
+        margin: 0 100px 70px 100px;
+        padding: 70px 60px 70px 60px;
+    }
+
+    @media only screen and (min-width: 1200px) {}
+}
+
+.study-case1 {
+    padding-right: 60px;
+}
+
+.study-case2 {
+    padding: 0 60px 0 60px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+.study-case3 {
+    padding-left: 60px;
+}
+
+.study-case1,
+.study-case2,
+.study-case3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.study-case1 div,
+.study-case2 div,
+.study-case3 div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #B9FF66;
+
+
+}
+
+.study-case1 img,
+.study-case2 img,
+.study-case3 img {
+    scale: 0.7;
+}
+
+
+/* working Process Blocks */
+
+.process {
+    margin: 70px 100px 30px 100px;
+    display: flex;
+    padding: 41px 60px 41px 60px;
+    gap: 10px;
+    border-radius: 45px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    @media only screen and (max-width: 600px) {
+        padding: 10px 15px 12px 15px;
+        margin: 0 10px 15px 10px;
+        
+    }
+    @media only screen and (min-width: 600px) {
+        margin: 0 30px 25px 30px;
+        padding: 12px 22px 12px 22px;
+    
+    }
+    @media only screen and (min-width: 768px) {
+        margin: 0 50px 17px 50px;
+        padding: 21px 30px 21px 30px;
+    
+    }
+    @media only screen and (min-width: 992px) {
+        margin: 0 100px 20px 100px;
+        padding: 41px 60px 41px 60px;
+
+    
+    }
+    @media only screen and (min-width: 1200px) {
+        
+    }
+}
+
+.textn{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textn h2{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.textn p{
+    font-size: 30px;
+    font-weight: 400;
+}
+
