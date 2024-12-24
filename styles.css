@@ -308,11 +308,15 @@ header nav div a {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .scroll-bar {
-        /* flex-direction: row; */
+        flex-direction: row;
         gap: 0px;
         padding: 0;
+    }
+    #one,
+    #two {
+        flex-flow: column;
     }
 }
 
@@ -458,28 +462,38 @@ header nav div a {
     background-color: #191A23;
 }
 
-#none {
-    display: none;
-}
+
 
 @media only screen and (max-width: 600px) {
+    .s-i{
+        display: none;
+    }
+    .S-box-i{
+        gap: 20px;
+    }
+    
 
     .service-bar {
         padding: 0 10px 0 10px;
         flex-direction: column;
+    }
+    .service-bar {
+        text-align: center;
     }
 
     .service {
         padding: 0 10px 0 10px;
     }
 
-    .service a {
-        display: none;
-    }
 
     .S-box {
+        /* flex-direction: column; */
         flex-basis: 100%;
+        width: 100%;
+        overflow: hidden;
     }
+
+    
 
 }
 
@@ -590,6 +604,7 @@ header nav div a {
     }
 
     .text {
+
         padding: 12% 0 12% 0;
         width: 100%;
         gap: 22px;
@@ -597,7 +612,9 @@ header nav div a {
 
     .text button {
         width: 100%;
+        padding: 20px 35px 20px 35px;
         font-size: large;
+        text-overflow: clip;
     }
 }
 
@@ -714,21 +731,25 @@ header nav div a {
     background-color: #191A23;
     color: white;
     border-radius: 45px;
+    
 
     @media only screen and (max-width: 600px) {
-        margin: 0 10px 15px 10px;
-        padding: 20px 15px 20px 15px;
+        margin: 0 10px 70px 10px;
+        /* padding: 20px 15px 20px 15px; */
+        flex-direction: column;
 
     }
 
     @media only screen and (min-width: 600px) {
         margin: 0 30px 25px 30px;
         padding: 25px 20px 25px 20px;
+        flex-direction: column;
     }
 
     @media only screen and (min-width: 768px) {
         margin: 0 50px 35px 50px;
         padding: 35px 30px 35px 30px;
+        flex-direction: row;
 
     }
 
@@ -778,6 +799,48 @@ header nav div a {
 .study-case2 img,
 .study-case3 img {
     scale: 0.7;
+}
+@media only screen and (max-width:400px) {
+    .study{
+        flex-direction: column;
+        padding: 25px 0 25px 0;
+    
+    }
+    .study-case2{
+        margin: 5px 5px 5px 5px;  
+        /* padding: 15px 0 15px 0; */
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 0;
+        border-right: 0;
+    }
+    .study-case1,.study-case3{
+        padding: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+}
+
+
+@media only screen and (max-width:770px) {
+    .study{
+        flex-direction: column;
+    }
+    .study-case2{
+        margin: 15px 30px 15px 30px;  
+        padding: 15px 0 15px 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 0;
+        border-right: 0;
+    }
+    .study-case1,.study-case3{
+        padding: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
 }
 
 
@@ -834,45 +897,30 @@ header nav div a {
 .textn h2{
     font-size: 60px;
     font-weight: 500;
+
 }
 
 .textn p{
+    display: flex;
     font-size: 30px;
     font-weight: 400;
 }
 
-.chigga{
-    margin-top: 130px;
-    @media only screen and (max-width: 600px) {
-        margin-top: 60px;
-        
+@media only screen and (max-width: 600px) {
+    .textn p{
+        display: none;
     }
-    @media only screen and (min-width: 600px) {
-        margin-top: 60px;
-    
-    }
-    @media only screen and (min-width: 768px) {
-        margin-top: 90px;
-    
-    }
-    @media only screen and (min-width: 992px) {
-        margin-top: 130px;
-    
-    }
-    @media only screen and (min-width: 1200px) {
-        
-    }
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
 }
 
-.cheat{
-    display: flex;
-    margin: 0 100px 70px 100px;
-    flex-wrap: wrap;
-    gap: 27px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.cheat img{
-    flex-basis: 32%
-}
