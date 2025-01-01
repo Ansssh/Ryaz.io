@@ -601,6 +601,7 @@ header nav div a {
 
     .proposal {
         margin: 0 10px 70px 10px;
+        padding: 0 20px 0 20px;
     }
 
     .text {
@@ -612,7 +613,7 @@ header nav div a {
 
     .text button {
         width: 100%;
-        padding: 20px 35px 20px 35px;
+        padding: 10px 25px 10px 25px;
         font-size: large;
         text-overflow: clip;
     }
@@ -911,10 +912,412 @@ header nav div a {
         display: none;
     }
 }
-@media only screen and (min-width: 600px) {
+
+/* Team Members */
+
+
+/* footer */
+
+footer {
+    /* border: 1px solid black; */
+    padding: 55px 60px;
+    background-color: #191A23;
+    border-radius: 50px 50px 0 0;
+    margin: 60px 100px 0 100px;
+    height: auto;
+    max-width: 100%;
+
+    gap: 40px;
+
+    @media screen and (max-width:700px) {
+        margin-top: 25px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin-top: 40px;
+    }
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.foot-logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0 10px 0;
+}
+
+.foot-logo span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer nav {
+    color: white;
+    display: inherit;
+    align-items: center;
+    /* padding-right: 10px; */
+    /* gap: 40px; */
+}
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.foot nav ul a {
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#logos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin: 6px 10px 0px 10px;
+    }
+    .foot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-logo{
+        margin-bottom: 20px;
+    }
+    .foot nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #logos{
+        display: none;
+    }
 
 }
+
+@media only screen and (min-width: 600px) {
+    footer {
+        margin: 6px 30px 0 30px;
+    }
+    .foot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-logo{
+        margin-bottom: 20px;
+    }
+    .foot nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #logos{
+        display: none;
+    }
+
+}
+
 @media only screen and (min-width: 768px) {
+    footer {
+        margin: 6px 50px 0 50px;
+    }
+    .foot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-logo{
+        margin-bottom: 20px;
+    }
+    .foot nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #logos{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        margin: 6px 100px 0 100px;
+    }
+    .foot{
+        flex-direction: row;
+        align-items: center;
+    }
+    .foot-logo{
+        margin-bottom: 0px;
+    }
+    .foot nav ul{
+        flex-direction: row;
+        padding: 0 10px 0 10px;
+        gap: 10px;
+    }
+    #logos{
+        display: flex;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1200px) {
+    footer {
+        margin: 6px 100px 0 100px;
+    }
+    footer nav{
+        gap: 40px;
+    }
+    .foot{
+        flex-direction: row;
+        align-items: center;
+    }
+    .foot nav ul{
+        flex-direction: row;
+        padding: 0 15px 0 15px;
+        gap: 25px;
+    }
+    #logos{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.foot-pc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27px;
+}
+
+.foot-pc form{
+    padding: 60px 40px 60px 40px;
+    background-color: #292A32;
+    border-radius: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+#mail-footer{
+    padding: 22px 35px 22px 35px;
+    border-radius: 14px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+#button-footer{
+    background-color:#B9FF66;
+    padding: 20px 35px 20px 35px;
+    border-radius: 14px;
+    border: none;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.info h3{
+    padding: 0 7px 0 7px;
+    background-color: #B9FF66;
+    width: fit-content;
+}
+
+.info p{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .foot-pc{
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .foot-pc form{
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .info{
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .foot-pc{
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .foot-pc form{
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .info{
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1020px) {
+    .foot-pc form{
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (min-width: 1070px) {
+    .foot-pc{
+        flex-direction: row;
+        width: auto;
+        flex-grow: 1;
+    }
+    .foot-pc form{
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    .info{
+        align-items: left;
+    }
+}
+
+
+/* Contact Us */
+
+.contactUs{
+    background-color: #F3F3F3;
+    margin: 0 100px 140px 100px;
+    display: flex;
+    
+    /* justify-content: space-between; */
+    padding: 60px 0 80px 100px;
+    border-radius: 45px;
+}
+
+.contactUs form{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+#radua{
+    display: flex;
+    gap: 20px;
+}
+
+#radua-in1, #radua-in2{
+    display: flex;
+    gap: 5px;
+}
+
+#radua-in1 input[type="radio"], #radua-in2 input{
+    accent-color :#B9FF66;
+    width: 20px;
+}
+
+#putt-name input, #putt-mail input{
+    border-radius: 14px;
+    border: 1px solid black;
+    width: 60%;
+    padding: 15px;
+}
+#putt-mess textarea{
+    border-radius: 14px;
+    border: 1px solid black;
+    min-width: 60%;
+    max-width: 60%;
+    padding: 15px;
+}
+
+#putt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#putt-name{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#putt-mail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#putt-mess{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactUs form button{
+
+        height: 68px;
+        width: 60%;
+        padding: 20px 35px 20px 35px;
+        border-radius: 14px;
+        border: none;
+        background-color: #191A23;
+        color: white;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contactUs{
+        margin: 0 10px 70px 10px;
+
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    
+}
+@media only screen and (min-width: 768px) {
+    
+
+}
+
+@media only screen and (max-width: 992px) {
+    #putt input{
+        width: 100%;
+    }
+    #putt-mess textarea{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: fit-content;
+    }
+    .contactUs form button{
+        width: 100%;
+    }
+
+    .contactUs{
+        padding: 30px;
+        /* gap: 0; */
+    }
+    .contactUs img{
+        display: none;
+    }
 
 }
 @media only screen and (min-width: 992px) {
@@ -923,4 +1326,3 @@ header nav div a {
 @media only screen and (min-width: 1200px) {
 
 }
-
