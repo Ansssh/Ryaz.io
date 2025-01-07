@@ -377,9 +377,10 @@ header nav div a {
 }
 
 .service-bar p {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
-    width: 40vw;
+    min-width: 40vw;
+    max-width: 50vw;
 }
 
 
