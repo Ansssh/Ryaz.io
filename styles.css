@@ -364,6 +364,7 @@ header nav div a {
     align-items: center;
     gap: 30px;
     margin: 0 0 80px 0;
+    /* width: 6vw; */
 }
 
 .service-bar h2 {
@@ -375,10 +376,13 @@ header nav div a {
     line-height: 51px;
 }
 
-.service-bar article {
+.service-bar p {
     font-size: 18px;
     font-weight: 400;
+    width: 40vw;
 }
+
+
 
 /* Sevice Boxes */
 
