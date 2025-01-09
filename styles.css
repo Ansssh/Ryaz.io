@@ -1545,3 +1545,69 @@ footer nav ul {
 
 }
 
+.chattu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 45px;
+    background-color:#191A23;
+    padding: 40px;
+    margin: 40px 100px 0 100px;
+    /* clip-path: url(media/chat.svg); */
+}
+
+.reviewer{
+    padding-left: 12%;
+    margin-top: -15px;
+    @media only screen and (max-width: 1200px) {
+        margin-top: 0;
+        padding-left: 13%;
+    }
+}
+
+.reviewer p{
+    color: #B9FF66;
+    font-weight: 400;
+    font-size: 18px;
+    @media only screen and (max-width: 1200px) {
+        font-size: 32px;
+    }
+}
+
+.reviewer span{
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+.navigator{
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    @media only screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.dot-group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.chatt{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+    @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+.review{
+    flex-grow: 1;
+}
+
