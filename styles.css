@@ -15,12 +15,22 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+}
 
-    @media screen and (max-width:700px) {
-        margin-top: 25px;
+@media only screen and (max-width:600px) {
+    header{
+        margin-top: 0px;
     }
+}
 
-    @media screen and (max-width: 1000px) {
+@media only screen and (max-width:900px) {
+    header{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    header{
         margin-top: 40px;
     }
 }
@@ -1465,8 +1475,11 @@ footer nav ul {
 .photou{
     width: fit-content;
     height: 100px;
-
+    
     overflow: hidden;
+    @media only screen and (max-width: 600px) {
+        align-self: center;
+    }
 }
 
 .photou img{
@@ -1478,28 +1491,39 @@ footer nav ul {
     /* overflow: hidden; */
 }
 
+
+
 #line{
     margin: 10px 0 10px 0;
 }
 
 
-#mmbuh *{
-    /* border: 1px solid black; */
-}
-
 .top{
     display: flex;
     gap: 10px;
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        justify-self: center;
+        
+
+    }
 }
 
 .linkeddin{
     justify-self: end;
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 .name{
     flex-grow: 1;
     gap: 15px;
+    @media only screen and (max-width: 600px) {
+        text-align: center;
+    }
 }
+
 
 .naam{
     display: flex;
@@ -1545,14 +1569,13 @@ footer nav ul {
 
 }
 
-.chattu{
+/* .chattu{
     display: flex;
     flex-direction: column;
     border-radius: 45px;
     background-color:#191A23;
     padding: 40px;
     margin: 40px 100px 0 100px;
-    /* clip-path: url(media/chat.svg); */
 }
 
 .reviewer{
@@ -1610,4 +1633,4 @@ footer nav ul {
 .review{
     flex-grow: 1;
 }
-
+ */
