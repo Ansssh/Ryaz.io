@@ -1437,3 +1437,81 @@ footer nav ul {
 .rights a{
     color: white;
 }
+
+
+/* Team Panel!! */
+
+.team-panel{
+    display: flex;
+    margin: 0 100px 0 100px;
+    gap: 20px;
+}
+
+#mmbuh{
+    flex-grow: 1;
+    padding: 45px 35px 45px 35px;
+    border-radius: 45px;
+    border: 1px solid black;
+    flex-basis: 30%;
+}
+
+.photou{
+    width: fit-content;
+    height: 100px;
+
+    overflow: hidden;
+}
+
+.photou img{
+    position: relative;
+    width: 100px;
+    object-fit: contain;
+    object-position: 0 -10px;
+    clip-path: path("M83.8068 48.9117C116.649 86.3213 86.3213 116.649 48.9117 83.8068C11.5021 116.649 -18.8258 86.3213 14.0166 48.9117C-18.8258 11.5021 11.5021 -18.8258 48.9117 14.0166C86.3213 -18.8258 116.649 11.5021 83.8068 48.9117Z");
+    /* overflow: hidden; */
+}
+
+#line{
+    margin: 10px 0 10px 0;
+}
+
+
+#mmbuh *{
+    /* border: 1px solid black; */
+}
+
+.top{
+    display: flex;
+    gap: 10px;
+}
+
+.linkeddin{
+    justify-self: end;
+}
+
+.name{
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.naam{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.naam p{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.naam span{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+.team-panel{
+    display: flex;
+    flex-wrap: wrap;
+}
