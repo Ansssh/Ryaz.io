@@ -7,53 +7,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="styles-new.css">
     <title>Positivus</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="media/logo.svg" alt="logo">
-            <span>Positivus</span>
+    <header class="header header__box">
+        <div class="header__logo">
+            <img class="header__logo__img" src="media/logo.svg" alt="logo">
+            <span class="header__logo__text">Positivus</span>
         </div>
 
-        <nav>
-            <ul>
-                <a href="#">About us</a><a href="#">Services</a><a href="#">Use Cases</a><a href="#">Pricing</a>
-                <ahref="#">Blog</a>
+        <nav class="header__navigation">
+            <ul class="header__navigation__list">
+                <a class="header__navigation__list__item" href="#">About us</a>
+                <a class="header__navigation__list__item" href="#">Services</a>
+                <a class="header__navigation__list__item" href="#">Use Cases</a>
+                <a class="header__navigation__list__item" href="#">Pricing</a>
+                <a class="header__navigation__list__item" href="#">Blog</a>
             </ul>
-            <div><a href="#">Request a quote</a></div>
-            <img src="media/Hamburger.svg" alt="List">
+            <div class="header__navigation__Spl">
+                <a class="header__navigation__Spl__item" href="#">Request a quote</a>
+            </div>
+            <img class="header__navigation__hidden" src="media/Hamburger.svg" alt="List">
         </nav>
     </header>
 
 
     <div class="hero">
-        <div>
-            <h1>Navigating the digital landscape for success</h1>
-            <article>Our digital marketing agency helps businesses grow and succeed online through a range of services
+        <div class="hero__insider">
+            <h1 class="hero__h1">Navigating the digital landscape for success</h1>
+            <article class="hero__article">Our digital marketing agency helps businesses grow and succeed online through
+                a range of services
                 including SEO, PPC, social media marketing, and content creation.</article>
-            <button>Book a Consultation</button>
+            <button class="hero__button">Book a Consultation</button>
         </div>
-        <img src="media/Mic.svg" alt="HeroSection">
+        <img src="media/Mic.svg" alt="HeroSection" class="hero__image">
     </div>
+
     <div class="hero-small">
-        <h1>Navigating the digital landscape for success</h1>
-        <img src="media/Mic.svg" alt="HeroSection">
-        <article>Our digital marketing agency helps businesses grow and succeed online through a range of services
+        <h1 class="hero__h1">Navigating the digital landscape for success</h1>
+        <img src="media/Mic.svg" alt="HeroSection" class="hero__image">
+        <article class="hero__article">Our digital marketing agency helps businesses grow and succeed online through a
+            range of services
             including SEO, PPC, social media marketing, and content creation.</article>
-        <button>Book a Consultation</button>
+        <button class="hero__button hero__button--small">Book a Consultation</button>
     </div>
 
     <div class="scroll-bar">
-        <div id="one">
+        <div class="scroll-bar__top-row">
             <img src="media/Scroller/amazon.svg" alt="amazon">
             <img src="media/Scroller/dribble.svg" alt="dribble">
             <img src="media/Scroller/hubspot.svg" alt="hubspot">
         </div>
-        <div id="two">
+        <div class="scroll-bar__bottom-row">
             <img src="media/Scroller/Netflix.svg" alt="Netflix">
             <img src="media/Scroller/Notion.svg" alt="Notion">
             <img src="media/Scroller/Zoom.svg" alt="Zoom">
@@ -61,12 +69,13 @@
     </div>
 
     <div class="service-bar">
-        <h2>Services</h2>
-        <p id="bar0">At our digital marketing agency, we offer a range of services to help businesses grow and succeed
+        <h2 class="service-bar__heading">Services</h2>
+        <p class="service-bar__para--one">At our digital marketing agency, we offer a range of services to help
+            businesses grow and succeed
             online. These services include:</p>
     </div>
 
-    <div class="service">
+    <!-- <div class="service">
         <div id="l1" class="S-box">
             <div class="S-box-i">
                 <h3><mark>Search Engine </mark><br><mark>Optimization</mark></h3>
@@ -126,6 +135,83 @@
                 </div>
             </div>
             <img src="media/service/b6.svg" alt="B6" class="s-i">
+        </div>
+    </div> -->
+
+    <div class="service">
+        <div id="l1" class="service__box--odd service__box service__box--one">
+            <div class="service__box__inner">
+                <h3 class="service__title">
+                    <mark class="service__mark-odd">Search Engine </mark>
+                    <br>
+                    <mark class="service__mark-odd">Optimization</mark>
+                </h3>
+                <div class="service__learn-more">
+                    <img src="media/service/Arrow.svg" alt="Go To" class="service__arrow">
+                    <a href="#" class="service__link--one">Learn More</a>
+                </div>
+            </div>
+            <img src="media/service/b1.svg" alt="B1" class="service__image">
+        </div>
+        <div id="l2" class="service__box--even service__box service__box--two">
+            <div class="service__box-inner">
+                <h3 class="service__title">
+                    <mark class="service__mark-even">Pay-per-Click </mark><br><mark class="service__mark-even">advertising</mark>
+                </h3>
+                <div class="service__learn-more">
+                    <img src="media/service/Arrow.svg" alt="Go To" class="service__arrow">
+                    <a href="#" class="service__link--two">Learn More</a>
+                </div>
+            </div>
+            <img src="media/service/b2.svg" alt="B2" class="service__image">
+        </div>
+        <div id="l3" class="service__box--odd service__box service__box--three">
+            <div class="service__box-inner">
+                <h3 class="service__title">
+                    <mark class="service__mark-odd">Social Media</mark><br><mark class="service__mark-odd">Marketing</mark>
+                </h3>
+                <div class="service__learn-more">
+                    <img src="media/service/Arrow2.svg" alt="Go To" class="service__arrow">
+                    <a href="#" class="service__link--three">Learn More</a>
+                </div>
+            </div>
+            <img src="media/service/b3.svg" alt="B3" class="service__image">
+        </div>
+        <div id="l4" class="service__box--even service__box service__box--four">
+            <div class="service__box-inner">
+                <h3 class="service__title">
+                    <mark class="service__mark-even">Email</mark><br><mark class="service__mark-even">Marketing</mark>
+                </h3>
+                <div class="service__learn-more">
+                    <img src="media/service/Arrow.svg" alt="Go To" class="service__arrow">
+                    <a href="#" class="service__link--four">Learn More</a>
+                </div>
+            </div>
+            <img src="media/service/b4.svg" alt="B4" class="service__image">
+        </div>
+        <div id="l5" class="service__box--odd service__box service__box--five">
+            <div class="service__box-inner">
+                <h3 class="service__title">
+                    <mark class="service__mark-odd">Content</mark><br><mark class="service__mark-odd">Creation</mark>
+                </h3>
+                <div class="service__learn-more">
+                    <img src="media/service/Arrow.svg" alt="Go To" class="service__arrow">
+                    <a href="#" class="service__link--five">Learn More</a>
+                </div>
+            </div>
+            <img src="media/service/b5.svg" alt="B5" class="service__image">
+        </div>
+        <div id="l6" class="service__box--even service__box service__box--six">
+            <div class="service__box-inner">
+                <h3 class="service__title">
+                    <mark class="service__mark-even">Analytics and</mark><br><mark class="service__mark-even">Tracking</mark>
+                </h3>
+                <div class="service__learn-more">
+                    <img src="media/service/Arrow2.svg" alt="Go To" class="service__arrow">
+                    <a href="#" class="service__link--six">Learn More</a>
+                </div>
+            </div>
+            <img src="media/service/b6.svg" alt="B6" class="service__image">
         </div>
     </div>
 
